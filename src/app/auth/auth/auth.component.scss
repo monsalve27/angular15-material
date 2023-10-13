@@ -1,0 +1,22 @@
+mat-sidenav-container{
+  height: calc(100vh - 0px);
+}
+.content{
+   height: calc(100vh - 98px);
+   border-radius: 16px;
+   margin-left: 32px;
+   display: flex;
+   font-size: 2rem;
+   color: lightgrey;
+}
+.avatar{
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius:50px;
+}
+.logo{
+  position: relative;
+  left: 25%;
+  right: 50%;
+}
