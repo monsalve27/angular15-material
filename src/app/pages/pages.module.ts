@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -16,6 +17,7 @@ import {LayoutModule} from '@angular/cdk/layout';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     MatInputModule,
     MatToolbarModule,
     MatIconModule,
