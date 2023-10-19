@@ -1,1 +1,41 @@
-<p>user-create works!</p>
+ <mat-label>Crear Usuario</mat-label>
+ <hr>
+<form class="example-form">
+  <mat-grid-list cols="2" rowHeight="8:1">
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre completo</mat-label>
+          <input matInput placeholder="Nombre completo">
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field class="example-full-width">
+          <mat-label>Dirección</mat-label>
+          <input matInput placeholder="Dirección del usuario">
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email">
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field class="example-full-width">
+          <mat-label>Teléfono</mat-label>
+          <input matInput placeholder="000-0000000">
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-radio-group aria-label="Seleccionar Género">
+      <mat-radio-button value="1">Masculino</mat-radio-button>
+      <mat-radio-button value="2">Femenino</mat-radio-button>
+    </mat-radio-group>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-label class="form-label">Fecha de Nacimiento</mat-label>
+        <input type="date" placeholder="MM/DD/YYYY" class="form-control" style="font-size: 14px; color:black; margin-right: 15px; margin-left: 15px;">
+    </mat-grid-tile>
+  </mat-grid-list>
+  <button mat-raised-button type="submit" color="primary">Añadir Usuario</button>
+</form>
