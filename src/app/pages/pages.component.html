@@ -13,29 +13,29 @@
       <mat-divider></mat-divider>
        <button mat-button class="menu-button">
         <mat-icon>person</mat-icon>
-        <span>Crear</span>
+        <span><a [routerLink]="['user/userCreate']">Crear</a></span>
       </button>
       <button mat-button class="menu-button">
         <mat-icon>edit</mat-icon>
-        <span>Editar</span>
+        <span><a [routerLink]="['user/userEdit/:1']">Editar</a></span>
       </button>
       <button mat-button class="menu-button">
         <mat-icon>delete</mat-icon>
-        <span>Eliminar</span>
+        <span><a [routerLink]="['user/userDelete']">Eliminar</a></span>
       </button>
       <button mat-button class="menu-button">
         <mat-icon>list</mat-icon>
-        <span>Listar</span>
+        <span><a [routerLink]="['user/users']">Listar</a></span>
       </button>
       <mat-divider></mat-divider>
       <button mat-button class="menu-button">
         <mat-icon>logout</mat-icon>
-        <span>Salir</span>
+        <span><a [routerLink]="['/login']">Salir</a></span>
       </button>
     </mat-sidenav>
     <mat-sidenav-content>
       <div class="content mat-elevation-z8">
-       {{currentScreenSize}}
+      <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
